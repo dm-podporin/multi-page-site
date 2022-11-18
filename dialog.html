@@ -1,0 +1,21 @@
+
+
+<style>
+    dialog::backdrop {background: rgb(255, 221, 157);}
+  </style>
+  
+  
+  
+  <button id = "open"> Show modal </button>
+  
+  <dialog>
+    <h1> Bottle shop </h1>
+    <p> This is bottle shop site made as study project for full stack developer courses</p>
+  </dialog>
+  
+  <script>
+    const openBtn = document.querySelector('#open')
+    const dialog = document.querySelector('dialog')
+    openBtn.onclick = () => dialog.showModal()
+    showModal()
+  </script>
